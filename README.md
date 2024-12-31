@@ -15,6 +15,7 @@ Other Python dependencies listed in requirements.txt
 To install the required dependencies:
 
 pip install -r requirements.txt
+
 📂 Dataset Preparation
 Prepare your dataset following the YOLOv5 format:
 
@@ -45,6 +46,7 @@ python train.py --img 640 --batch 16 --epochs 50 --data custom_dataset.yaml --we
 --epochs: Number of training epochs.
 --data: Path to the dataset YAML file.
 --weights: Pre-trained weights to start with (e.g., yolov5s.pt).
+
 📊 Results
 After training, results such as mAP, precision, and recall will be saved in the runs/train/exp folder. Visualization files and trained weights are also stored here.
 
@@ -54,10 +56,12 @@ To test the trained model on new images:
 python detect.py --weights runs/train/exp/weights/best.pt --source path/to/images
 --weights: Path to the trained weights file.
 --source: Path to the input images or videos.
+
 📈 Performance Evaluation
 Evaluate the model performance using the validation dataset:
 
 python val.py --weights runs/train/exp/weights/best.pt --data custom_dataset.yaml
+
 📝 Notes
 Use a GPU for faster training and inference.
 Ensure that the dataset is properly labeled and formatted to avoid errors.
