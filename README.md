@@ -19,8 +19,6 @@ pip install -r requirements.txt
 📂 Dataset Preparation
 Prepare your dataset following the YOLOv5 format:
 
-kotlin
-Sao chép mã
 /dataset
 ├── images
 │   ├── train
